@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact All-Pro Power — Tampa's licensed electrician. Call (813) 455-9472 or email Ian@all-propower.com. Serving Tampa Bay 24/7.">
+  <meta property="og:title" content="Contact | All-Pro Power — Tampa, FL">
+  <meta property="og:description" content="Reach out to All-Pro Power for electrical service in Tampa Bay. Call, email, or send us a message.">
+  <title>Contact | All-Pro Power — Tampa, FL</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231c1c1c'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='middle' dy='0.1em'>⚡</text></svg>">
+</head>
+<body x-data="{ mobileOpen: false }">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header scrolled" x-data="{ scrolled: false }" @scroll.window="scrolled = window.scrollY > 40" :class="{ 'scrolled': scrolled }">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="All-Pro Power — Home">
+        <span class="logo-bolt" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="16,2 6,16 13,16 12,26 22,12 15,12" fill="#f0a500" stroke="#f0a500" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-all">ALL-PRO</span>
+          <span class="logo-power">POWER</span>
+        </span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+      </ul>
+      <a href="tel:8134559472" class="btn btn-primary nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+        (813) 455-9472
+      </a>
+      <button class="hamburger" @click="mobileOpen = !mobileOpen" :aria-expanded="mobileOpen" aria-controls="mobile-menu-contact" aria-label="Toggle mobile menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+    <div id="mobile-menu-contact" class="mobile-menu" :class="{ 'open': mobileOpen }" @click.away="mobileOpen = false">
+      <ul role="list">
+        <li><a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a></li>
+        <li><a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a></li>
+        <li><a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a></li>
+      </ul>
+      <a href="tel:8134559472" class="btn btn-primary mobile-cta">Call Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--short" aria-label="Contact page header">
+      <div class="page-hero-bg">
+        <img src="assets/images/hero_003.jpg" alt="All-Pro Power electrician serving Tampa Bay" width="1600" height="400" loading="eager">
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container page-hero-content">
+        <p class="hero-eyebrow page-eyebrow">Get In Touch</p>
+        <h1 class="page-hero-title">Contact <span class="accent-word">Us</span></h1>
+        <p class="page-hero-subtitle">We respond fast — usually same day</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-pad" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div class="contact-info" data-animate>
+            <div class="section-label" aria-hidden="true">All-Pro Power</div>
+            <h2 id="contact-heading" class="contact-headline">Reach Us Through...</h2>
+
+            <div class="contact-methods">
+              <a href="tel:8134559472" class="contact-method contact-method--phone">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+                  </svg>
+                </div>
+                <div class="contact-method-text">
+                  <span class="contact-method-label">Phone</span>
+                  <span class="contact-method-value">(813) 455-9472</span>
+                  <span class="contact-method-note">Available 24/7 for emergencies</span>
+                </div>
+              </a>
+
+              <a href="mailto:Ian@all-propower.com" class="contact-method">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>
+                  </svg>
+                </div>
+                <div class="contact-method-text">
+                  <span class="contact-method-label">Email</span>
+                  <span class="contact-method-value">Ian@all-propower.com</span>
+                  <span class="contact-method-note">We typically respond same day</span>
+                </div>
+              </a>
+
+              <div class="contact-method contact-method--info">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-method-text">
+                  <span class="contact-method-label">Service Area</span>
+                  <span class="contact-method-value">Tampa Bay, FL</span>
+                  <span class="contact-method-note">Hillsborough · Pinellas · Polk · Pasco · Manatee · Sarasota</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust note -->
+            <div class="contact-trust">
+              <div class="stars" aria-label="5 out of 5 stars" style="margin-bottom: 8px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="contact-trust-text">"After paying the price, he still answers my calls afterwards. He cares even after he's finished with the job." — Komal P.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper" data-animate style="animation-delay: 100ms;">
+            <div class="form-header">
+              <h2 class="form-title">...Or Send Us a Message!</h2>
+              <p class="form-subtitle">Fill out the form below and Ian will reach out shortly.</p>
+            </div>
+
+            <form
+              class="contact-form"
+              action="mailto:Ian@all-propower.com"
+              method="POST"
+              enctype="text/plain"
+              aria-label="Contact form"
+              x-data="contactForm()"
+              @submit.prevent="submitForm"
+            >
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span class="required" aria-label="required">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  x-model="form.name"
+                  :class="{ 'error': errors.name }"
+                  :aria-describedby="errors.name ? 'name-error' : ''"
+                >
+                <p x-show="errors.name" id="name-error" class="form-error" role="alert" x-text="errors.name"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required" aria-label="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  x-model="form.email"
+                  :class="{ 'error': errors.email }"
+                  :aria-describedby="errors.email ? 'email-error' : ''"
+                >
+                <p x-show="errors.email" id="email-error" class="form-error" role="alert" x-text="errors.email"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="(813) 000-0000"
+                  autocomplete="tel"
+                  x-model="form.phone"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="service" class="form-label">Service Needed</label>
+                <select id="service" name="service" class="form-input form-select" x-model="form.service">
+                  <option value="">Select a service...</option>
+                  <option value="emergency">24-Hour Emergency Repair</option>
+                  <option value="lighting">Lighting Installation</option>
+                  <option value="rewiring">Electrical Rewiring</option>
+                  <option value="panel">Panel Upgrade</option>
+                  <option value="smoke">Smoke Detector Installation</option>
+                  <option value="outlet">Outlet / Switch Installation</option>
+                  <option value="diagnostics">System Diagnostics</option>
+                  <option value="breaker">Breaker Box Replacement</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required" aria-label="required">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Describe what you need help with..."
+                  required
+                  aria-required="true"
+                  rows="5"
+                  x-model="form.message"
+                  :class="{ 'error': errors.message }"
+                  :aria-describedby="errors.message ? 'message-error' : ''"
+                ></textarea>
+                <p x-show="errors.message" id="message-error" class="form-error" role="alert" x-text="errors.message"></p>
+              </div>
+
+              <!-- Success message -->
+              <div x-show="submitted" class="form-success" role="alert">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>Message sent! Ian will be in touch shortly.</span>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg btn-full"
+                :disabled="submitting"
+                :aria-busy="submitting"
+              >
+                <span x-show="!submitting">Send Message</span>
+                <span x-show="submitting" class="btn-loading">
+                  <svg class="spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="32"/>
+                  </svg>
+                  Sending...
+                </span>
+              </button>
+
+              <p class="form-note">
+                Or call us directly at <a href="tel:8134559472" class="form-phone-link">(813) 455-9472</a> — available 24/7 for emergencies.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="All-Pro Power — Home">
+          <span class="logo-bolt" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+              <polygon points="16,2 6,16 13,16 12,26 22,12 15,12" fill="#f0a500"/>
+            </svg>
+          </span>
+          <span class="logo-text">
+            <span class="logo-all">ALL-PRO</span>
+            <span class="logo-power">POWER</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Electrical Service — Tampa Bay, FL</p>
+        <p class="footer-desc">Locally owned and operated. Licensed, insured, and committed to your safety.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3 class="footer-nav-title">Navigation</h3>
+        <ul role="list">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3 class="footer-nav-title">Contact Us</h3>
+        <address>
+          <a href="tel:8134559472" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            (813) 455-9472
+          </a>
+          <a href="mailto:Ian@all-propower.com" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>
+            </svg>
+            Ian@all-propower.com
+          </a>
+        </address>
+        <div class="footer-areas">
+          <h4 class="footer-areas-title">Service Areas</h4>
+          <p>Hillsborough · Pinellas · Polk · Pasco · Manatee · Sarasota</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> All-Pro Power. All rights reserved.</p>
+        <p class="footer-license">Licensed Electrical Contractor — Tampa, FL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function contactForm() {
+      return {
+        form: { name: '', email: '', phone: '', service: '', message: '' },
+        errors: {},
+        submitting: false,
+        submitted: false,
+
+        validate() {
+          this.errors = {};
+          if (!this.form.name.trim()) this.errors.name = 'Please enter your name.';
+          if (!this.form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.form.email)) {
+            this.errors.email = 'Please enter a valid email address.';
+          }
+          if (!this.form.message.trim()) this.errors.message = 'Please describe what you need help with.';
+          return Object.keys(this.errors).length === 0;
+        },
+
+        async submitForm() {
+          if (!this.validate()) return;
+          this.submitting = true;
+
+          // Compose mailto body
+          const subject = encodeURIComponent('New Contact Form Submission — All-Pro Power');
+          const body = encodeURIComponent(
+            `Name: ${this.form.name}\nEmail: ${this.form.email}\nPhone: ${this.form.phone}\nService: ${this.form.service}\n\nMessage:\n${this.form.message}`
+          );
+          window.location.href = `mailto:Ian@all-propower.com?subject=${subject}&body=${body}`;
+
+          setTimeout(() => {
+            this.submitting = false;
+            this.submitted = true;
+            this.form = { name: '', email: '', phone: '', service: '', message: '' };
+          }, 800);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
