@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All-Pro Power — Tampa's trusted licensed electrician. Serving Hillsborough, Pinellas, Polk, Pasco, Manatee & Sarasota counties. Call (813) 455-9472 for 24/7 emergency service.">
+  <meta property="og:title" content="All-Pro Power | Electrical Service — Tampa, FL">
+  <meta property="og:description" content="Knowledgeable, reliable, experienced electrical service. Transparent pricing. 5-star rated. Serving all of Tampa Bay.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://allpropower.com">
+  <title>All-Pro Power | Electrical Service — Tampa, FL</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231c1c1c'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='middle' dy='0.1em'>⚡</text></svg>">
+</head>
+<body x-data="{ mobileOpen: false }" :class="{ 'nav-open': mobileOpen }">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" x-data="{ scrolled: false }" @scroll.window="scrolled = window.scrollY > 40" :class="{ 'scrolled': scrolled }">
+    <nav class="nav-container" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="All-Pro Power — Home">
+        <span class="logo-bolt" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="16,2 6,16 13,16 12,26 22,12 15,12" fill="#f0a500" stroke="#f0a500" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-all">ALL-PRO</span>
+          <span class="logo-power">POWER</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <a href="tel:8134559472" class="btn btn-primary nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+        (813) 455-9472
+      </a>
+
+      <!-- Hamburger -->
+      <button
+        class="hamburger"
+        @click="mobileOpen = !mobileOpen"
+        :aria-expanded="mobileOpen"
+        aria-controls="mobile-menu"
+        aria-label="Toggle mobile menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu"
+      :class="{ 'open': mobileOpen }"
+      @click.away="mobileOpen = false"
+    >
+      <ul role="list">
+        <li><a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a></li>
+        <li><a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a></li>
+        <li><a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a></li>
+      </ul>
+      <a href="tel:8134559472" class="btn btn-primary mobile-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+        Call Now
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <main id="main">
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg">
+        <img
+          src="assets/images/hero_001.jpg"
+          alt="Professional electrician at work in Tampa FL"
+          class="hero-img"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Tampa Bay's Trusted Electrician</p>
+        <h1 class="hero-headline">
+          <span class="line-1">ALL-PRO</span>
+          <span class="line-2">POWER</span>
+          <span class="line-3">Electrical Service</span>
+        </h1>
+        <p class="hero-body">Knowledgeable. Reliable. Experienced. Serving Hillsborough, Pinellas, Polk, Pasco, Manatee &amp; Sarasota counties.</p>
+        <div class="hero-actions">
+          <a href="tel:8134559472" class="btn btn-primary btn-lg hero-cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            Call to Schedule
+          </a>
+          <a href="services.html" class="btn btn-ghost btn-lg">
+            View Services
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="hero-badges" aria-label="Trust indicators">
+          <div class="badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f0a500" stroke-width="2" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>5-Star Rated</span>
+          </div>
+          <div class="badge-divider" aria-hidden="true"></div>
+          <div class="badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f0a500" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            <span>24/7 Emergency</span>
+          </div>
+          <div class="badge-divider" aria-hidden="true"></div>
+          <div class="badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f0a500" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Licensed &amp; Insured</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         WHY CHOOSE US
+    ═══════════════════════════════════════════ -->
+    <section class="why-section section-pad" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">Why Choose Us</div>
+
+        <div class="why-grid">
+          <div class="why-text" data-animate>
+            <h2 id="why-heading" class="section-headline">
+              Values That Shine Through In Every Electrical Solution
+            </h2>
+            <p class="why-body">
+              At All-Pro Power, we pride ourselves in being knowledgeable, reliable and experienced, providing you with quality service, transparent pricing, and respectful attention to your electrical needs.
+            </p>
+            <p class="why-body">
+              As a locally owned and operated company and a leading electrical service provider across Tampa Bay, we are committed to becoming your go-to choice when it's time to bring in a professional.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-md" style="margin-top: var(--space-5);">Get a Free Quote</a>
+          </div>
+
+          <div class="why-pillars" aria-label="Our core values">
+            <article class="pillar" data-animate style="animation-delay: 80ms;">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Reliable & On Time</h3>
+              <p class="pillar-body">We show up when we say we will — no waiting, no excuses. Your time is respected.</p>
+            </article>
+
+            <article class="pillar" data-animate style="animation-delay: 160ms;">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Licensed & Insured</h3>
+              <p class="pillar-body">Fully licensed electrical services, bringing your home up to code safely and correctly.</p>
+            </article>
+
+            <article class="pillar" data-animate style="animation-delay: 240ms;">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Transparent Pricing</h3>
+              <p class="pillar-body">No hidden fees, no surprises. You'll always know what you're paying for before work begins.</p>
+            </article>
+
+            <article class="pillar" data-animate style="animation-delay: 320ms;">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Locally Owned</h3>
+              <p class="pillar-body">A Tampa Bay company serving Tampa Bay families. We care about our community.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICES PREVIEW
+    ═══════════════════════════════════════════ -->
+    <section class="services-preview section-pad bg-dark" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="section-label-light" aria-hidden="true">What We Do</div>
+          <h2 id="services-heading" class="section-headline light" data-animate>Electrical Services</h2>
+          <p class="section-subhead light" data-animate>Comprehensive electrical solutions for Tampa Bay homeowners</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-animate style="animation-delay: 0ms;">
+            <div class="service-number" aria-hidden="true">01</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Lighting Installation</h3>
+            <p class="service-body">Indoor and outdoor lighting installation — from ambient to security lighting.</p>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay: 60ms;">
+            <div class="service-number" aria-hidden="true">02</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M12 12v4M10 14h4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Panel Upgrades</h3>
+            <p class="service-body">Modernize your electrical panel to safely handle today's power demands.</p>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay: 120ms;">
+            <div class="service-number" aria-hidden="true">03</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">24/7 Emergency</h3>
+            <p class="service-body">Round-the-clock emergency repair service — we're ready when you need us most.</p>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay: 180ms;">
+            <div class="service-number" aria-hidden="true">04</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Electrical Rewiring</h3>
+            <p class="service-body">Bring your home's wiring up to code for safety and reliability.</p>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay: 240ms;">
+            <div class="service-number" aria-hidden="true">05</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Outlet &amp; Switch Install</h3>
+            <p class="service-body">Add, replace, or upgrade outlets and switches throughout your home.</p>
+          </article>
+
+          <article class="service-card service-card--cta" data-animate style="animation-delay: 300ms;">
+            <div class="service-cta-content">
+              <h3 class="service-cta-title">See All Services</h3>
+              <p class="service-cta-body">Browse our complete list of electrical solutions for Tampa Bay homes.</p>
+              <a href="services.html" class="btn btn-accent btn-md">View All Services</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         STATS BAND
+    ═══════════════════════════════════════════ -->
+    <section class="stats-band" aria-label="Company statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-animate>
+            <div class="stat-number">6</div>
+            <div class="stat-label">Counties Served</div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate style="animation-delay: 80ms;">
+            <div class="stat-number">5★</div>
+            <div class="stat-label">Google Rating</div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate style="animation-delay: 160ms;">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Emergency Service</div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate style="animation-delay: 240ms;">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Satisfaction Focus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════════ -->
+    <section class="testimonials-section section-pad" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">Client Reviews</div>
+        <h2 id="testimonials-heading" class="section-headline" data-animate>Don't Just Take Our Word For It</h2>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card" data-animate style="animation-delay: 0ms;">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "He communicated efficiently. Called me immediately to talk about what was going on. Went to the home on time. Figured out the problem quickly... He cares even after he's finished with the job. Honest and hard working."
+            </blockquote>
+            <cite class="testimonial-author">— Komal P.</cite>
+          </article>
+
+          <article class="testimonial-card" data-animate style="animation-delay: 80ms;">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Ian was at my house today! He did a beautiful job for me! I had a lot of electrical issues that had to be fixed — lights and outlets not working. He took care of them all! I highly recommend him! You will not be sorry!"
+            </blockquote>
+            <cite class="testimonial-author">— Paula F.</cite>
+          </article>
+
+          <article class="testimonial-card" data-animate style="animation-delay: 160ms;">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0a500" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "I had a great experience working with Ian! He installed six ceiling fans in my home and the entire process was smooth from start to finish. I had high, sloped ceilings and he worked with me beautifully."
+            </blockquote>
+            <cite class="testimonial-author">— Verified Google Review</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA BAND
+    ═══════════════════════════════════════════ -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container cta-inner" data-animate>
+        <div class="cta-text">
+          <h2 id="cta-heading" class="cta-headline">Ready to Get Started?</h2>
+          <p class="cta-body">Call or email us today for fast, professional electrical service in Tampa Bay.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:8134559472" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            (813) 455-9472
+          </a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg">Send a Message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="All-Pro Power — Home">
+          <span class="logo-bolt" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+              <polygon points="16,2 6,16 13,16 12,26 22,12 15,12" fill="#f0a500"/>
+            </svg>
+          </span>
+          <span class="logo-text">
+            <span class="logo-all">ALL-PRO</span>
+            <span class="logo-power">POWER</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Electrical Service — Tampa Bay, FL</p>
+        <p class="footer-desc">Locally owned and operated. Licensed, insured, and committed to your safety.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3 class="footer-nav-title">Navigation</h3>
+        <ul role="list">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3 class="footer-nav-title">Contact Us</h3>
+        <address>
+          <a href="tel:8134559472" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            (813) 455-9472
+          </a>
+          <a href="mailto:Ian@all-propower.com" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>
+            </svg>
+            Ian@all-propower.com
+          </a>
+        </address>
+
+        <div class="footer-areas">
+          <h4 class="footer-areas-title">Service Areas</h4>
+          <p>Hillsborough · Pinellas · Polk · Pasco · Manatee · Sarasota</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> All-Pro Power. All rights reserved.</p>
+        <p class="footer-license">Licensed Electrical Contractor — Tampa, FL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

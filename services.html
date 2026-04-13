@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All-Pro Power electrical services in Tampa, FL — lighting installation, panel upgrades, rewiring, emergency repair, smoke detector installation, and more.">
+  <meta property="og:title" content="Electrical Services | All-Pro Power Tampa, FL">
+  <meta property="og:description" content="Licensed electrical services for Tampa Bay homeowners. 24/7 emergency service available.">
+  <title>Electrical Services | All-Pro Power — Tampa, FL</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231c1c1c'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='middle' dy='0.1em'>⚡</text></svg>">
+</head>
+<body x-data="{ mobileOpen: false }">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header scrolled" x-data="{ scrolled: false }" @scroll.window="scrolled = window.scrollY > 40" :class="{ 'scrolled': scrolled }">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="All-Pro Power — Home">
+        <span class="logo-bolt" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="16,2 6,16 13,16 12,26 22,12 15,12" fill="#f0a500" stroke="#f0a500" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-all">ALL-PRO</span>
+          <span class="logo-power">POWER</span>
+        </span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link active" aria-current="page">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="tel:8134559472" class="btn btn-primary nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+        (813) 455-9472
+      </a>
+      <button class="hamburger" @click="mobileOpen = !mobileOpen" :aria-expanded="mobileOpen" aria-controls="mobile-menu-services" aria-label="Toggle mobile menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+    <div id="mobile-menu-services" class="mobile-menu" :class="{ 'open': mobileOpen }" @click.away="mobileOpen = false">
+      <ul role="list">
+        <li><a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a></li>
+        <li><a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a></li>
+        <li><a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a></li>
+      </ul>
+      <a href="tel:8134559472" class="btn btn-primary mobile-cta">Call Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Services page header">
+      <div class="page-hero-bg">
+        <img src="assets/images/hero_002.jpg" alt="Electrical panel and wiring work" width="1600" height="600" loading="eager">
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container page-hero-content">
+        <p class="hero-eyebrow page-eyebrow">What We Offer</p>
+        <h1 class="page-hero-title">Electrical <span class="accent-word">Services</span></h1>
+        <p class="page-hero-subtitle">Licensed, reliable electrical solutions for homes across Tampa Bay</p>
+      </div>
+    </section>
+
+    <!-- Services Intro -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="services-intro" data-animate>
+          <div class="section-label" aria-hidden="true">All-Pro Power</div>
+          <h2 class="section-headline">Our Team Delivers Reliable, Licensed Electrical Services</h2>
+          <p class="intro-body">From emergency repairs to full home rewiring, our experienced electricians handle every job with professionalism, precision, and care. Every service comes with transparent pricing and a commitment to your safety.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Full List -->
+    <section class="section-pad bg-off-white" aria-labelledby="services-full-heading">
+      <div class="container">
+        <h2 id="services-full-heading" class="sr-only">All Services</h2>
+
+        <div class="services-full-grid">
+
+          <article class="service-full-card" data-animate style="animation-delay: 0ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">24-Hour Emergency Repair</h3>
+              <p class="service-full-body">Electrical emergencies can happen at any time, which is why we offer 24-hour emergency repair services. Our experienced electricians are always ready to respond swiftly to ensure your safety and restore power.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 60ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">Indoor &amp; Outdoor Lighting Installation</h3>
+              <p class="service-full-body">Whether you want to enhance your home's aesthetic appeal or improve visibility in your outdoor spaces, we offer professional lighting installation. We handle everything from ambient lighting to security lighting, ensuring effective and stylish solutions.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 120ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">Electrical Rewiring Services</h3>
+              <p class="service-full-body">If your home is showing signs of outdated wiring or has recently undergone significant renovations, our rewiring services will bring your electrical system up to code, enhancing its reliability and safety.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 180ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M12 12v4M10 14h4"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">Panel Upgrades</h3>
+              <p class="service-full-body">Many older homes struggle to meet the demands of modern appliances. Our panel upgrade services ensure your electrical panel can safely handle today's higher power requirements, preventing overloads and enhancing efficiency.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 240ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">Smoke Detector Installation</h3>
+              <p class="service-full-body">Safety is our top priority. We specialize in the installation of replacement smoke detectors to keep your home protected. Ensure your smoke detectors are current and in optimal working condition to safeguard your family.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 300ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">Light Switch &amp; Outlet Installation</h3>
+              <p class="service-full-body">From adding new light switches to upgrading outlets for compatibility with modern devices, our installation services improve your home's functionality and convenience.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 360ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M8 11h6M11 8v6"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">System Troubleshooting &amp; Diagnostics</h3>
+              <p class="service-full-body">Our skilled electricians conduct thorough system diagnostics to identify issues within your electrical system. This proactive approach allows us to address problems before they pose serious risks, ensuring your home remains safe.</p>
+            </div>
+          </article>
+
+          <article class="service-full-card" data-animate style="animation-delay: 420ms;">
+            <div class="service-full-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <div class="service-full-content">
+              <h3 class="service-full-title">Breaker Box Replacement</h3>
+              <p class="service-full-body">If your home has an outdated or malfunctioning breaker box, our team can provide a safe replacement. Upgrading your breaker box ensures your electrical system operates efficiently and safely, reducing the risk of electrical fires.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="area-section section-pad bg-dark" aria-labelledby="area-heading">
+      <div class="container">
+        <div class="area-inner">
+          <div class="area-text" data-animate>
+            <div class="section-label-light" aria-hidden="true">Service Area</div>
+            <h2 id="area-heading" class="section-headline light">Serving Tampa &amp; Nearby Communities</h2>
+            <p class="area-body">We proudly serve homeowners across the greater Tampa Bay region. If you're in any of the following counties, All-Pro Power is your local electrical expert.</p>
+            <div class="county-grid" aria-label="Counties served">
+              <div class="county-tag">Hillsborough</div>
+              <div class="county-tag">Pinellas</div>
+              <div class="county-tag">Polk</div>
+              <div class="county-tag">Pasco</div>
+              <div class="county-tag">Manatee</div>
+              <div class="county-tag">Sarasota</div>
+            </div>
+            <a href="contact.html" class="btn btn-primary btn-lg" style="margin-top: var(--space-6);">Schedule Service</a>
+          </div>
+          <div class="area-image" data-animate style="animation-delay: 100ms;">
+            <img src="assets/images/image_001.png" alt="All-Pro Power service area map covering Tampa Bay counties" width="600" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="services-cta-heading">
+      <div class="container cta-inner" data-animate>
+        <div class="cta-text">
+          <h2 id="services-cta-heading" class="cta-headline">Need an Electrician Today?</h2>
+          <p class="cta-body">Call us for fast, professional service. Available 24/7 for emergencies.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:8134559472" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            (813) 455-9472
+          </a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg">Send a Message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="All-Pro Power — Home">
+          <span class="logo-bolt" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+              <polygon points="16,2 6,16 13,16 12,26 22,12 15,12" fill="#f0a500"/>
+            </svg>
+          </span>
+          <span class="logo-text">
+            <span class="logo-all">ALL-PRO</span>
+            <span class="logo-power">POWER</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Electrical Service — Tampa Bay, FL</p>
+        <p class="footer-desc">Locally owned and operated. Licensed, insured, and committed to your safety.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3 class="footer-nav-title">Navigation</h3>
+        <ul role="list">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3 class="footer-nav-title">Contact Us</h3>
+        <address>
+          <a href="tel:8134559472" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            (813) 455-9472
+          </a>
+          <a href="mailto:Ian@all-propower.com" class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>
+            </svg>
+            Ian@all-propower.com
+          </a>
+        </address>
+        <div class="footer-areas">
+          <h4 class="footer-areas-title">Service Areas</h4>
+          <p>Hillsborough · Pinellas · Polk · Pasco · Manatee · Sarasota</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> All-Pro Power. All rights reserved.</p>
+        <p class="footer-license">Licensed Electrical Contractor — Tampa, FL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
